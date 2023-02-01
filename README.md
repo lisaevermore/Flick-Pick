@@ -1,4 +1,4 @@
-# Flick-Pick-
+# Flick-Pick
 Team Name: The Underdogs
 Project Title:  Flick-Pick 
 
