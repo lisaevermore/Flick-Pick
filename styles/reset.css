@@ -25,16 +25,16 @@
    .overlay input[type=text] {
     padding: 15px;
     font-size: 17px;
-    border: none;
+    border: 5px;
     float: left;
     width: 80%;
-    background: rgb(136, 134, 134);
+    background:whitesmoke;
     border: 2px;
     border-color: black;
   }
   
   .overlay input[type=text]:hover {
-    background: #f1f1f1;
+    background: whitesmoke
   }
   
   /* Style the submit button */
@@ -42,14 +42,16 @@
     float: left;
     width: 20%;
     padding: 15px;
-    background: #ddd;
-    font-size: 17px;
+    background: rgb(153, 26, 136);
+    font-size: 20px;
+    font-weight: bolder;
     border: none;
     cursor: pointer;
   }
   
   .overlay button:hover {
-    background: #bbb;
+    background: rgb(153, 26, 136);
+    
   }
 
  
