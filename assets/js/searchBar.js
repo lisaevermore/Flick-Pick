@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> 755e31243ae771273146765bf6d9967e8b2a8cbb
 var titleEl,  yearEl, ratedEl;
 
 // This .on("click") function will trigger the AJAX Call
@@ -15,6 +19,35 @@ $(".find-movie").on("click", function(event) {
          }).then(function(response){
            console.log(response);
             var tr = $("<tr>");
+<<<<<<< HEAD
+           // Create and save references to 3 td elements containing the Title, Year, and Actors from the AJAX response object
+             titleEl = $("<td>").text(response.Title);
+             yearEl = $("<td>").text(response.Year);
+             ratedEl = $("<td>").text(response.Rated);
+            // console.log("Title: " + response.Title)
+            // console.log("Year: " + yearEl)
+            // console.log("Rated: " + ratedEl)
+             // Append the td elements to the new table row
+            tr.append(titleEl, yearEl, ratedEl);
+            // Append the table row to the tbody element
+            $("tbody").append(tr);
+
+           
+         });
+   // console.log(movie)
+   // console.log("meow")
+   
+    });
+   
+ 
+  
+   
+   
+   
+ 
+   
+   
+=======
             var tableBody = $("tbody tr");
 
            // Create and save references to 3 td elements containing the Title, Year, and Actors from the AJAX response object
@@ -104,3 +137,4 @@ $(".find-movie").on("click", function(event) {
    
 
 //var newRowContent = "<tr><td>titleEl</td><td>yearEl</td><td>ratedEl</td> </tr>";
+>>>>>>> 755e31243ae771273146765bf6d9967e8b2a8cbb
