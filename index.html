@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- added bootstrap link-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      
-<title>Flick-Pick</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:description"
+      content=""
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4e948b40f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Flick-Pick | Watch Any Latest Movie for Free</title>
+  </head>
+  <body>
+    <header>
+      <form id="form">
+        <input
+          type="text"
+          placeholder="Search Any Movie"
+          autocomplete="off"
+          id="search"
+          class="search"
+        /><i class="fas fa-search"></i>
+      </form>
+    </header>
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
 
-    <body>
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">Flick-Pick</h1>
-              <p class="lead">Struggling to find a film to watch? Struggle no more with Flick-Pick</p>
-            </div>
-          </div>
+      <!-- Overlay content -->
+      <div class="overlay-content" id="overlay-content"></div>
 
+      <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow"
+        ><i class="fas fa-arrow-left"></i
+      ></a>
 
-
-
-
-
-
-
-
-
-
-
-<!--Added bootstrap links-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
-
-    </html>
-
-
-
+      <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow"
+        ><i class="fas fa-arrow-right"></i
+      ></a>
+    </div>
+    <main id="main"></main>
+    <div class="pagination">
+      <div class="page" id="prev">Previous Page</div>
+      <div class="current" id="current">1</div>
+      <div class="page" id="next">Next Page</div>
+    </div>
+    <script src=".//assets/js/script.js"></script>
+  </body>
+</html>
