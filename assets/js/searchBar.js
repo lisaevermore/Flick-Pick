@@ -66,11 +66,11 @@ $(".find-movie").on("click", function(event) {
 // var yearRow = firstCol.find("td").eq(1);
 // var rattingRow = firstCol.find("td").eq(2);
 
-   // var titlesEl = "<tr><td>titleEl</td> </tr>";
-   // var yearsEl = "<tr><td>yearEl</td> </tr>";
-   // var ratedsEl = "<tr><<td>ratedEl</td> </tr>";
+   var titlesEl = "<tr><td>titleEl</td> </tr>";
+   var yearsEl = "<tr><td>yearEl</td> </tr>";
+   var ratedsEl = "<tr><<td>ratedEl</td> </tr>";
 
-   // var tableBody = $("tbody tr");
+    var tableBody = $("tbody tr");
 
  
 
@@ -85,18 +85,18 @@ $(".find-movie").on("click", function(event) {
       
    //  })
 
-   //  for (i = 0; i < tableBody.length; i++){
-   //    if (tableBody[i] === "" ){
-   //       onsole.log("The first td element is empty");
-   //       $(titlesEl).appendTo(nameRow);
-   //       $(yearsEl).appendTo(yearRow);
-   //       $(ratedsEl).appendTo(ratingRow);
-   //    } else {
-   //       console.log("The first td element is not empty");
-   //       console.log(tableBody[i])
-   //    }
+    for (i = 0; i < tableBody.length; i++){
+      if (tableBody[i] === ""){
+         console.log("The first td element is empty");
+         $(titlesEl).appendTo(nameRow);
+         $(yearsEl).appendTo(yearRow);
+         $(ratedsEl).appendTo(ratingRow);
+      } else {
+         console.log("The first td element is not empty");
+         console.log(tableBody[i])
+      }
    
-   //  }
+    }
 
    
 
