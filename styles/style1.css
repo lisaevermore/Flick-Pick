@@ -1,5 +1,7 @@
 
- /* .jumbotron {
+ /* 
+ removed jumbotron
+ .jumbotron {
   
   height: 300px;
   display: flex;
@@ -8,7 +10,9 @@
   padding-top: 20px;
   margin: 10px;
 }
-  */
+  */ 
+
+  /* styling for header */
 .display-4 {
   font-size: 72px;
   font-weight:bolder;
@@ -51,20 +55,23 @@ body {
   background-color: black;
   font-size: 28px;
   font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
  }
 
  .btn:hover {
-  background-color:rgb(102, 102, 185);
+  background-color:rgb(190, 85, 204);
  }
  .paragraph {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
   font-family: fantasy;
+  padding: 30px;
  }
 
 .dropdown-menu {
-  background-color:rgb(102, 102, 185);
+  background-color:rgb(190, 85, 204);
 }
 
 .dropdown-item {
@@ -76,4 +83,12 @@ th {
   font-size: 20px;
   font-weight: bolder;
   text-align: center;
+}
+
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  
+  justify-content:space-around
 }
