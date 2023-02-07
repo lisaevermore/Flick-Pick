@@ -9,7 +9,7 @@
 <!-- Load icon library -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <link rel="stylesheet" href="styles/reset.css" />
-<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/style1.css">
 
 <title>Flick-Pick</title>
     </head>
@@ -22,7 +22,7 @@
             </div>
           </div>
   <!-- searchbar -->
-          <div id="myOverlay" class="overlay">
+          <div id="myOverlay" class="overlay text-center">
             <div class="overlay-content">
               <form action="action_page.php">
                 <input type="text" class="textBox">
@@ -30,7 +30,9 @@
               </form>
             </div>
           </div>
-         
+         <br>
+         <br>
+
           <div class="paragraph">
             <p>Search for a specific film above, or select one of the drop down menus to search by
                 genre, year or age rating
@@ -45,7 +47,8 @@
 
 
 <!-- added drop down menus for genre, year and rating -->
-          <div class="btn-group dropright display-flex dropdown-toggle-split ">
+<div class="display-flex">
+          <div class="btn-group dropright display-flex dropdown-toggle-split">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Genre
             </button>
@@ -64,7 +67,7 @@
           <br>
           
 
-          <div class="btn-group dropright dropdown-toggle-split">
+          <div class="btn-group dropright dropdown-toggle-split" id="display-flex">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Year
             </button>
@@ -95,7 +98,7 @@
       <a class="dropdown-item" href="#">NC-17</a>
 </div>
 </div>
-
+</div>
 <br>
 <br>
 <br>
