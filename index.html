@@ -16,7 +16,10 @@
         <!-- added bootstrap link-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- Load icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="styles/reset.css" />
+<link rel="stylesheet" href="styles/style1.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 <!-- <script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js”></script> -->
 <!-- <script src=“https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js”></script> -->
@@ -33,16 +36,19 @@
 </form>
 
 <title>Flick-Pick</title>
-</head>
-<body>
-          <div class="jumbotron jumbotron-fluid">
-            <div class="container">
+    </head>
+
+    <body>
+     
+   
+      <!--  <div class="jumbotron jumbotron-fluid">
+            <div class="container"> -->
               <h1 class="display-4">Flick-Pick</h1>
               <p class="lead">Struggling to find a film to watch? Struggle no more with Flick-Pick!</p>
             </div>
           </div>
-  
-          <div id="myOverlay" class="overlay">
+  <!-- searchbar -->
+          <div id="myOverlay" class="overlay text-center">
             <div class="overlay-content">
               <form action="action_page.php" id="movie-form">
                 <input type="text" class="textBox" id="movie-input">
@@ -54,6 +60,25 @@
           </div>
           <!-- added drop down menus for genre, year and rating -->
           <div class="btn-group dropright display-flex dropdown-toggle-split ">
+         <br>
+         <br>
+
+          <div class="paragraph">
+            <p>Search for a specific film above, or select one of the drop down menus to search by
+                genre, year or age rating
+            </p>
+          </div>
+         
+        
+          <br>
+          <br>
+          <br>
+
+
+
+<!-- added drop down menus for genre, year and rating -->
+<div class="display-flex">
+          <div class="btn-group dropright display-flex dropdown-toggle-split">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Genre
             </button>
@@ -70,7 +95,9 @@
           <br>
           <br>
           <br>
-          <div class="btn-group dropright dropdown-toggle-split">
+          
+
+          <div class="btn-group dropright dropdown-toggle-split" id="display-flex">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Year
             </button>
@@ -100,6 +127,11 @@
       <a class="dropdown-item" href="#">NC-17</a>
 </div>
 </div>
+</div>
+<br>
+<br>
+<br>
+
           <table class="table table-bordered " id="myTable">
             <thead>
               <tr>
