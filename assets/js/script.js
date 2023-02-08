@@ -392,8 +392,8 @@ $(".find-movie").on("click", function(event) {
      event.preventDefault();
   //   // Here we grab the text from the input box
      var movie = $("#movie-input").val();
-  //     // Here we construct our URL http://www.omdbapi.com/?apikey=[yourkey]&
-      var queryURL = "http://www.omdbapi.com/?t=" + movie + "=&apikey=7d82ee7f";
+  //     // Here we construct our URL https://www.omdbapi.com/?apikey=[yourkey]&
+      var queryURL = "https://www.omdbapi.com/?t=" + movie + "=&apikey=7d82ee7f";
       $.ajax({
           url: queryURL,
           method: "GET"
