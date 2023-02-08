@@ -173,6 +173,7 @@ function getMovies(url) {
     .then((res) => res.json())
     .then((data) => {
       console.log(data.results);
+      
       if (data.results.length !== 0) {
         showMovies(data.results);
         currentPage = data.page;
@@ -348,19 +349,7 @@ function getColor(vote) {
   }
 }
 
-// Search Any Movie on Search Bar
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
 
-  const searchTerm = search.value;
-  selectedGenre = [];
-  setGenre();
-  if (searchTerm) {
-    getMovies(searchURL + "&query=" + searchTerm);
-  } else {
-    getMovies(API_URL);
-  }
-});
 
 // Go to current, Next & Previous Page
 prev.addEventListener("click", () => {
@@ -391,3 +380,84 @@ function pageCall(page) {
     getMovies(url);
   }
 }
+
+// ---------------------
+
+
+let count = 1;
+// This .on("click") function will trigger the AJAX Call
+$(".find-movie").on("click", function(event) {
+  //      // Preventing the submit button from trying to submit the form
+  //   // We're optionally using a form so the user may hit Enter to search instead of clicking the button
+     event.preventDefault();
+  //   // Here we grab the text from the input box
+     var movie = $("#movie-input").val();
+  //     // Here we construct our URL http://www.omdbapi.com/?apikey=[yourkey]&
+      var queryURL = "http://www.omdbapi.com/?t=" + movie + "=&apikey=7d82ee7f";
+      $.ajax({
+          url: queryURL,
+          method: "GET"
+        }).then(function(response){
+          console.log(response);
+           var tr = $("<tr>");
+           var tableBody = $("tbody");
+
+          // Create and save references to 3 td elements containing the Title, Year, and Actors from the AJAX response object
+           
+           var titleEl = $("<td>").text(response.Title);
+           var yearEl = $("<td>").text(response.Year);
+           var ratedEl = $("<td>").text(response.Rated);
+           var titleEl = $("<td>").on("mousedown", function() { mDown(this); }).text(response.Title);
+
+       
+        tr.append("<th scope='row'>" + count + "</th>", titleEl, yearEl, ratedEl);
+        tableBody.append(tr);
+        count++;
+           
+         
+          
+           function mDown(obj) {
+            obj.style.backgroundColor = "#1ec5e5";
+            var div = $(obj);
+            console.log(div.text());
+            
+            div.on("click", (e) => {
+              e.preventDefault();
+            
+              const searchTerm = div.text()
+              selectedGenre = [];
+              setGenre();
+              if (searchTerm) {
+                getMovies(searchURL + "&query=" + searchTerm);
+              } else {
+                getMovies(API_URL);
+              }
+            });    
+          }
+         
+  
+        });
+
+   });
+  
+
+
+//   // Search Any Movie on Search Bar
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//   const searchTerm = search.value;
+//   selectedGenre = [];
+//   setGenre();
+//   if (searchTerm) {
+//     getMovies(searchURL + "&query=" + searchTerm);
+//   } else {
+//     getMovies(API_URL);
+//   }
+// });
+
+
+
+
+
+

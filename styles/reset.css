@@ -15,26 +15,21 @@
     right: 45px;
     font-size: 60px;
     cursor: pointer;
-    color: white;
+    /* color: white; */
   }
-  .overlay .closebtn:hover {
-    color: #ccc;
-  }
+ 
   
-   /* Style the search field */
-   .overlay input[type=text] {
-    padding: 15px;
+    /* Style the search field */
+  .overlay-searchbar input[type=text] {
+    background-color: transparent;
     font-size: 17px;
-    border: 5px;
-    width: 40%;
-    background:whitesmoke;
+    border: none;
+    width: 80%;
     border: 2px;
-    border-color: whitesmoke;
+    border-color: black;
   }
+
   
-  .overlay input[type=text]:hover {
-    background: whitesmoke;
-  }
   
   /* Style the submit button */
   .overlay button {
@@ -58,4 +53,7 @@
     
   }
 
+
  
+/* ------------------------ */
+
