@@ -22,12 +22,14 @@
     /* Style the search field */
   .overlay-searchbar input[type=text] {
     background-color: transparent;
-    font-size: 17px;
+    font-size: 22px;
     border: none;
-    width: 80%;
+    width: 100%;
     border: 2px;
     border-color: black;
-  }
+    text-align: center;
+}
+    
 
   
   
@@ -53,7 +55,15 @@
     
   }
 
-
+  .btn {
+    border-radius: 30px;
+    padding: 10px 40px;
+    color: white;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 1;
+}
  
 /* ------------------------ */
 

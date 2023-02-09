@@ -19,7 +19,7 @@
   font-family:fantasy;
   color: black;
   text-align: center;
-
+  padding-top: 20px;
 }
 
 .lead {
@@ -31,7 +31,7 @@
 }
 
 body {
-  background-image: url("./images/picture 2.jpg");
+  background-image: url("../images/picture 2.jpg");
 }
 
 .table {
@@ -68,6 +68,7 @@ body {
   font-weight: bold;
   font-family: fantasy;
   padding: 30px;
+  color: #000000;
  }
 
 .dropdown-menu {
