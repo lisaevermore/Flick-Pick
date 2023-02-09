@@ -3,9 +3,9 @@
 ## Project Title:  Flick-Pick 
 
 ## The Team Members:
-Wannisa Khamsontha
-Phillip Davis
-Natasha Okparavero
+Wannisa Khamsontha,
+Phillip Davis,
+Natasha Okparavero,
 Ikenna Unadike
 
 ## Description:
@@ -28,11 +28,11 @@ As a user, I should be able to find a movie based on certain search criteria, an
 
 ### Acceptance criteria:
 
-It is done when we have an interactive html webpage styled with bootstrap, CSS and JavaScript
-It is done when we can search for a specific movie and view the trailer
-It is done when you search for a word/film and the title of a film containing that word appears on the table 
-It is done when we have a list of 5 chosen films displayed in the table of results
-It is done when the trailer of the movie that was selected from the table of results is displayed in the preview pane
+It is done when we have an interactive html webpage styled with bootstrap, CSS and JavaScript.
+It is done when we can search for a specific movie and view the trailer.
+It is done when you search for a word/film and the title of a film containing that word appears on the table.
+It is done when we have a list of 5 chosen films displayed in the table of results.
+It is done when the trailer of the movie that was selected from the table of results is displayed in the preview pane.
 
 
 
